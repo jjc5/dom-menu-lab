@@ -56,3 +56,16 @@ subMenuEl.classList.add('flex-around');
 subMenuEl.style.position = 'absolute';
 //Task 4.5
 subMenuEl.style.top = '0';
+//Task 5.1
+const topMenuLinks = document.querySelectorAll('a');
+console.log(topMenuLinks[0]);
+console.log(topMenuLinks[1]);
+console.log(topMenuLinks[2]);
+console.log(topMenuLinks[3]);
+const showingSubMenu = false;
+//Task 5.2
+topMenuEl.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  if (evt.target.tagName !== 'A') return;
+  console.log(evt.target.innerHTML)
+})
