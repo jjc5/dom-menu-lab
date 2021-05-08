@@ -32,3 +32,12 @@ menuLinks.forEach(function(link, i){
   a.innerHTML = menuLinks[i].text;
   topMenuEl.appendChild(a);
 });
+//BONUS
+//Task 4.0
+const subMenuEl = document.getElementById("sub-menu");
+//Task 4.1
+subMenuEl.style.height = '100%';
+//Task 4.2
+subMenuEl.style.backgroundColor = 'var(--sub-menu-bg)';
+//Task 4.3
+subMenuEl.classList.add('flex-around');
